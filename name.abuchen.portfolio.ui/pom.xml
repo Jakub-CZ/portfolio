@@ -17,8 +17,64 @@
 		<sonar.exclusions>**/Messages.java,**/kommer.xml</sonar.exclusions>
 		<sonar.coverage.jacoco.xmlReportPaths>../name.abuchen.portfolio.ui.tests/target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
 	</properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.core.jobs</artifactId>
+            <version>3.15.700</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.jface</artifactId>
+            <version>3.38.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>name.abuchen.portfolio</groupId>
+            <artifactId>name.abuchen.portfolio</artifactId>
+            <version>0.80.5-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.e4.ui.services</artifactId>
+            <version>1.6.500</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.e4.ui.css.core</artifactId>
+            <version>0.14.500</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.e4.ui.css.swt</artifactId>
+            <version>0.15.600</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>name.abuchen.portfolio</groupId>
+            <artifactId>name.abuchen.portfolio.bootstrap</artifactId>
+            <version>0.80.5-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.core.databinding.beans</artifactId>
+            <version>1.10.400</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse</groupId>
+            <artifactId>swtchart</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>C:/Users/jakub/IdeaProjects/portfolio-performance/lib/org.eclipse.swtchart_1.0.0.202412021530.jar</systemPath>
+        </dependency>
+    </dependencies>
 
-	<build>
+    <build>
 		<plugins>
 			<plugin>
 				<artifactId>maven-enforcer-plugin</artifactId>

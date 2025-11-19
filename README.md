@@ -2,6 +2,11 @@
 
 [Portfolio Performance](https://www.portfolio-performance.info): Track and evaluate the performance of your investment portfolio across stocks, cryptocurrencies, and other assets.
 
+# Jakub's TODOs:
+
+- Support the "Transfers" category in IB Flex Query? (or just ignore transfers, assuming the origin was also imported)
+- Support Charles Schwab
+
 ## Status
 
 [![Build Status](https://github.com/portfolio-performance/portfolio/workflows/CI/badge.svg)](https://github.com/portfolio-performance/portfolio/actions?query=workflow%3ACI) [![Latest Release](https://img.shields.io/github/release/buchen/portfolio.svg)](https://github.com/portfolio-performance/portfolio/releases/latest) [![Release Date](https://img.shields.io/github/release-date/buchen/portfolio?color=blue)](https://github.com/portfolio-performance/portfolio/releases/latest) [![License](https://img.shields.io/github/license/buchen/portfolio.svg)](https://github.com/portfolio-performance/portfolio/blob/master/LICENSE)

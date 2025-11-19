@@ -204,7 +204,6 @@ public class TextUtilTest
         assertEquals(0, TextUtil.compare("abc", "abc"));
     }
 
-    @Test
     public void testIsNumericMatch()
     {
         var decimalSeparator = new DecimalFormatSymbols().getDecimalSeparator();

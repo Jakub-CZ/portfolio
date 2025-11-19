@@ -18,7 +18,7 @@
 		<sonar.skip>true</sonar.skip>
 	</properties>
 
-	<build>
+    <build>
 		<plugins>
 			<plugin>
 				<artifactId>maven-enforcer-plugin</artifactId>
@@ -57,4 +57,40 @@
 			</plugin>
 		</plugins>
 	</build>
+
+    <dependencies>
+        <!-- Dependency on the main project bundle (mirror Require-Bundle: name.abuchen.portfolio) -->
+        <dependency>
+            <groupId>name.abuchen.portfolio</groupId>
+            <artifactId>name.abuchen.portfolio</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+        <!-- Hamcrest bundles from MANIFEST.MF (org.hamcrest.core and org.hamcrest.library) -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <version>3.0</version>
+        </dependency>
+
+        <!-- JUnit bundle from MANIFEST.MF -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+        </dependency>
+        <dependency>
+            <groupId>name.abuchen.portfolio</groupId>
+            <artifactId>name.abuchen.portfolio.junit</artifactId>
+            <version>0.80.5-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>5.14.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
 </project>

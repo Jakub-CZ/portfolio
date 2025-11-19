@@ -39,4 +39,17 @@
 			</plugin>
 		</plugins>
 	</build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.framework</artifactId>
+            <version>1.10.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>1.8.17</version>
+        </dependency>
+    </dependencies>
 </project>

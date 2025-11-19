@@ -62,6 +62,8 @@ junit-plugin configuration PortfolioPerformance_Tests:TestBase {
     test {
         container '/name.abuchen.portfolio.tests';
         runner junit4;
+        /*class name.abuchen.portfolio.util.TextUtilTest;
+        method 'testIsNumericMatch';*/
     }
 }
 
